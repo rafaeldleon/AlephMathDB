@@ -1,0 +1,3 @@
+include alephmathdbserver/config/deployment.ini_tmpl
+recursive-include alephmathdbserver/public *
+recursive-include alephmathdbserver/templates *
