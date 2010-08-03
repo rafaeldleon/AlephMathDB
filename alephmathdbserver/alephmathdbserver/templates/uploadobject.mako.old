@@ -1,0 +1,4 @@
+<form name="test" method="GET" action="/uploadobject/email">
+Email Address: <input type="text" name="email" />
+               <input type="submit" name="submit" value="Submit" />
+</form>
