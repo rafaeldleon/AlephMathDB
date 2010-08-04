@@ -16,13 +16,14 @@ class UploadobjectController(BaseController):
         return render('/uploadobject.mako')
 
     def email(self):
-        posts={};
-        for key in request.params:
-            posts[key]=request.params[key]
+        posts=dict(request.params);
+        #for key in request.params:
+        #    posts[key]=request.params[key]
         posts['date_of_creation']=datetime.utcnow()
         con = Connection('localhost', 27017)
         db = con.testdb
         collection = db.test_collection
         collection.insert(posts)
+        #collection.insert(posts)
         #return 'Your email is: %s' % request.params['email']
         return 'Added in DB'

@@ -14,6 +14,6 @@
 
 
 
-   ${h.submit('submit','Submit Object')}
+   ${h.submit('submit','Submit Object',class='ui-button-text')}
    ${h.end_form()}
 
